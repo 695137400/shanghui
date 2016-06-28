@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bj">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:background="@drawable/bj"
+		android:layout_marginBottom="390dp"
+		android:gravity="center">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:background="@drawable/bj">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:background="#47586B">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="编辑信息"
+					android:textColor="#0C2C93"
+					android:textSize="28sp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="几月几日"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:editable="false"
+					android:inputType="none"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt1"
+					android:id="@+id/riqi"
+					android:maxLines="1"
+					android:layout_marginRight="10dp"
+					android:lines="1"
+					android:paddingLeft="3dp"
+					android:onClick="dataRiqi"
+					android:hint="点击选择"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="当天周几"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt1"
+					android:id="@+id/exingqi"
+					android:inputType="none"
+					android:editable="false"
+					android:maxLines="1"
+					android:layout_marginRight="10dp"
+					android:lines="1"
+					android:paddingLeft="3dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="几点几分"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt1"
+					android:id="@+id/shijian"
+					android:inputType="none"
+					android:editable="false"
+					android:maxLines="1"
+					android:layout_marginRight="10dp"
+					android:paddingLeft="3dp"
+					android:lines="1"
+					android:hint="点击选择"
+					android:text="00:00"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="拜访来访"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt"
+					android:id="@+id/xingzhi"
+					android:maxLines="1"
+					android:layout_marginRight="10dp"
+					android:inputType="text"
+					android:paddingLeft="3dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="对方姓名"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt"
+					android:id="@+id/name"
+					android:maxLines="1"
+					android:layout_marginRight="10dp"
+					android:paddingLeft="3dp"
+					android:inputType="text"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="对方性别"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<RadioGroup
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_weight="8"
+					android:layout_width="wrap_content"
+					android:id="@+id/editRadioGroup1">
+
+					<RadioButton
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="男"
+						android:checked="true"
+						android:textColor="#000000"
+						android:id="@+id/editRadioButton1"
+						android:textSize="25sp"/>
+
+					<RadioButton
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#000000"
+						android:text="女"
+						android:id="@+id/editRadioButton2"
+						android:textSize="25sp"
+						android:layout_marginLeft="15dp"/>
+
+				</RadioGroup>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="对方年龄"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt"
+					android:id="@+id/age"
+					android:maxLines="1"
+					android:layout_marginRight="10dp"
+					android:paddingLeft="3dp"
+					android:inputType="number"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="之前工作"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt"
+					android:id="@+id/gongzuo"
+					android:maxLines="1"
+					android:layout_marginRight="10dp"
+					android:inputType="text"
+					android:paddingLeft="3dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="讲的几班"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt"
+					android:id="@+id/jiban"
+					android:minLines="1"
+					android:layout_marginRight="10dp"
+					android:inputType="text"
+					android:paddingLeft="3dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="老家哪的"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt"
+					android:id="@+id/jiguan"
+					android:minLines="1"
+					android:layout_marginRight="10dp"
+					android:inputType="text"
+					android:paddingLeft="3dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="拜访地点"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:textSize="18dp"/>
+
+				<EditText
+					android:layout_height="35dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="6"
+					android:ems="10"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/srkbjt"
+					android:id="@+id/didian"
+					android:maxLines="1"
+					android:layout_marginRight="10dp"
+					android:lines="1"
+					android:inputType="text"
+					android:paddingLeft="3dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:layout_weight="2"
+					android:text="拜访内容"
+					android:textColor="#000000"
+					android:layout_marginLeft="5dp"
+					android:layout_marginTop="10dp"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:layout_weight="6"
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_marginLeft="10dp"
+					android:background="@drawable/srkbjt"
+					android:id="@+id/infos"
+					android:minLines="5"
+					android:gravity="start"
+					android:layout_marginRight="10dp"
+					android:paddingLeft="3dp"
+					android:paddingBottom="10dp"
+					android:layout_marginTop="5dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/content"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:layout_marginTop="15dp"/>
+
+		<LinearLayout
+			android:id="@+id/bottom_panel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				style="?android:attr/buttonStyleSmall"
+				android:layout_height="40dp"
+				android:text="取消"
+				android:layout_weight="2"
+				android:background="@drawable/shape"
+				android:id="@+id/quxiao"
+				android:layout_marginLeft="20dp"
+				android:onClick="onQuxiao"
+				android:layout_width="0dp"
+				android:layout_gravity="center_vertical"
+				android:textSize="16sp"/>
+
+			<Button
+				style="?android:attr/buttonStyleSmall"
+				android:layout_height="40dp"
+				android:layout_width="0dp"
+				android:text="确定"
+				android:layout_weight="2"
+				android:background="@drawable/shape"
+				android:layout_marginLeft="20dp"
+				android:id="@+id/saves"
+				android:layout_marginRight="20dp"
+				android:layout_gravity="center_vertical"
+				android:onClick="onSaves"
+				android:textSize="16sp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

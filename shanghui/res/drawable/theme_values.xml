@@ -1,0 +1,29 @@
+<meizu_theme_values>
+    <color name="mzc_theme_action_bar_text_color">#532583</color>
+    <color name="mzc_theme_action_bar_text_selected_color">#FF62BE66</color>
+    <color name="mzc_theme_multi_choice_menu_normal">#FF62BE66</color>
+    <color name="mzc_theme_multi_choice_menu_disable">#4c000000</color>
+    <color name="mzc_theme_menu_normal">#FF000000</color>
+    <color name="mzc_theme_menu_disable">#4c000000</color>
+
+    <color name="mzc_theme_dialer_theme_text_color">#FF62BE66</color>
+
+    <color name="mzc_theme_fast_scroll_letter_default_color">#4D000000</color>
+    <color name="mzc_theme_fast_scroll_letter_active_color">#FF000000</color>
+    <color name="mzc_theme_fast_scroll_letter_overlay_text_color">#FFffffff</color>
+
+    <color name="mzc_theme_search_bar_input_text_color">#FF000000</color>
+    <color name="mzc_theme_search_bar_input_text_hint_color">#4D000000</color>
+
+    <color name="mzc_theme_contact_list_item_header_text_color">#80000000</color>
+    <color name="mzc_theme_contact_list_name_text_color">#FF000000</color>
+    <color name="mzc_theme_contact_list_data_text_color">#80000000</color>
+    <color name="mzc_theme_contact_list_call_type_text_color">#80000000</color>
+    <color name="mzc_theme_contact_list_missed_call_type_text_color">#FFE15230</color>
+
+    <color name="mzc_theme_dialpad_digits_text_color">#FF62BE66</color>
+    <color name="mzc_theme_dialpad_digits_text_cursor_color">#FF62BE66</color>
+    <color name="mzc_theme_dialpad_digits_text_divider_color">#26000000</color>
+    <color name="mzc_theme_dialpad_location_text_color">#7F000000</color>
+    <color name="mzc_theme_dialpad_key_ripple_bg_color">#1F000000</color>
+</meizu_theme_values>

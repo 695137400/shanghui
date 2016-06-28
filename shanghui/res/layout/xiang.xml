@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:background="@drawable/bj">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:layout_marginBottom="300dp"
+		android:background="@drawable/bj">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:background="#47586B">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:text="查看详情"
+				android:textColor="#0C2C93"
+				android:textSize="28sp"/>
+
+			<TextView
+				android:layout_height="0dp"
+				android:layout_width="0dp"
+				android:text="Text"
+				android:id="@+id/usid"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="拜访日期："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xriqi"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="当天周几："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xxingqi"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="拜访时间："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xshijian"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="拜访来访："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xxingzhi"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="对方姓名："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xname"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="对方性别："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xsex"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="对方年龄："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xage"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="之前工作："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xgongzuo"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="讲的几班："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xjiban"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="对方籍贯："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xjiguan"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="拜访地点："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+				android:id="@+id/xdidian"
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:text="拜访内容："
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_weight="9"
+                android:text="    "
+				android:textColor="#F51708"
+				android:layout_marginLeft="-15dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="vertical"
+			android:gravity="center">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_weight="9"
+				android:textColor="#F51708"
+				android:id="@+id/xinfos"
+				android:maxWidth="100dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginRight="10dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/content"
+			android:layout_width="fill_parent"
+			android:layout_height="100dp"
+			android:layout_weight="1"
+			android:orientation="vertical"/>
+
+		<LinearLayout
+			android:id="@+id/bottom_panel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/done"
+				android:layout_width="0dp"
+				android:layout_height="45dp"
+				android:layout_weight="1"
+				android:layout_gravity="center_vertical"
+				android:text="返回"
+				android:onClick="fanhui"
+				android:background="@drawable/shape"
+				android:layout_marginLeft="25dp"
+				android:textSize="25sp"/>
+
+			<Button
+				android:id="@+id/deletese"
+				android:layout_width="0dp"
+				android:layout_height="45dp"
+				android:layout_weight="1"
+				android:layout_gravity="center_vertical"
+				android:text="删除"
+				android:onClick="onDeletese"
+				android:background="@drawable/shape"
+				android:layout_marginLeft="25dp"
+				android:textSize="25sp"/>
+
+			<Button
+				android:id="@+id/revert"
+				android:layout_width="0dp"
+				android:layout_height="45dp"
+				android:layout_weight="1"
+				android:layout_gravity="center_vertical"
+				android:text="编辑"
+				android:background="@drawable/shape"
+				android:layout_marginRight="26dp"
+				android:layout_marginLeft="20dp"
+				android:onClick="onUpdateInfo"
+				android:textSize="25sp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

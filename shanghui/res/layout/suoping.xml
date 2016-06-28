@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/bj"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical">
+
+		<EditText
+			android:layout_height="30dp"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:background="@drawable/srkbjt"
+			android:id="@+id/editM"
+			android:paddingLeft="10dp"
+			android:lines="1"
+			android:maxLines="1"
+			android:inputType="textPassword|textWebPassword"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_marginTop="20dp">
+
+			<Button
+				android:layout_height="45dp"
+				android:layout_width="wrap_content"
+				android:text="添加密码"
+				android:layout_weight="1"
+				android:background="@drawable/shape"
+				android:layout_marginRight="20dp"
+				android:id="@+id/newpwd"
+				android:onClick="addpwd"/>
+
+			<Button
+				android:layout_height="45dp"
+				android:layout_width="70dp"
+				android:text="确定"
+				android:background="@drawable/shape"
+				android:id="@+id/buttonM"
+				android:onClick="onM"
+				android:layout_weight="1"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
