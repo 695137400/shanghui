@@ -26,7 +26,10 @@ import com.alibaba.fastjson.*;
 import java.text.SimpleDateFormat;
 import java.sql.Date;
 
-
+/**
+*数据操作类
+*
+*/
 public class DateActivity
 {
 
