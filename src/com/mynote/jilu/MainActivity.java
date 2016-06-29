@@ -11,6 +11,11 @@ import com.alibaba.fastjson.*;
 import android.util.*;
 import android.content.pm.PackageManager;
 
+/**
+ * 列表页
+ * @author sun
+ *
+ */
 public class MainActivity extends Activity
 {
     /** Called when the activity is first created. */
@@ -32,36 +37,42 @@ public class MainActivity extends Activity
 		mainEdit = (EditText)findViewById(R.id.mainEditText);
 		method(this, null);
 	}
-
+    
+    /**
+     * 根据条件查询
+     * @param c
+     * @param tj
+     */
 	public void method(Context c, String tj)
 	{
 		try
 		{
-			//mainEdit.setText(tj);
 			UserInfo[] u=db.queryTheCursor(c, tj);
+			Log.d("【查询到当前数据】：", "【 "+JSON.toJSONString(u)+" 】");
 			ListAdapter lp=new MyAdapter(c, u);
-			//Toast.makeText(this, "//////"+JSON.toJSON(u).toString(), 0).show();
 			ls.setAdapter(lp);
 		}
 		catch (Exception e)
 		{
-			//mainEdit.setText(e.getMessage());
 			Toast.makeText(this, "加载数据：" + e.getMessage(), 0).show();
+			Log.d("【查询数据出错】：", "【 "+e.getMessage()+" 】");
 		}
 	}
 
-    //自动刷新
+    /**
+     * 返回自动刷新
+     */
     @Override
     protected void onResume()
     {
-        // TODO: Implement this method
         super.onResume();
         method(this, mainEdit.getText().toString());
     }
 
 
 	/**
-	 *新增
+	 * 跳转到添加数据
+	 * @param v
 	 */
 	public void onInsert(View v)
 	{
@@ -75,6 +86,11 @@ public class MainActivity extends Activity
 			Toast.makeText(this, "新增出错：" + e.getMessage(), 0).show();
 		}
 	}
+	
+	/**
+	 * 点击查询按钮
+	 * @param v
+	 */
 	public void onSelect(View v)
 	{
 		EditText etx=(EditText)findViewById(R.id.mainEditText);
@@ -88,23 +104,42 @@ public class MainActivity extends Activity
 			method(this, tj);
 		}
 	}
+	
+	/**
+	 * 跳转到详细信息
+	 * @param v
+	 */
 	public void onXiang_Xi_Xin_Xi(View v)
 	{
 		Intent t=new Intent(MainActivity.this, XiangActivity.class);
 		TextView tv=(TextView)v.findViewById(R.id.tid);
 		t.putExtra("tid", tv.getTag().toString());
-		//Toast.makeText(this,"当前选择："+tv.getText(),0).show();
 		startActivityForResult(t, RESULT_OK);
 	}
 }
 
+/**
+ * 封装的数据list填充类
+ * @author sun
+ *
+ */
 class MyAdapter extends ArrayAdapter<UserInfo>
 {
+	
+	/**
+	 * 初始化list传入数据数组
+	 * @param cx
+	 * @param us
+	 */
 	public MyAdapter(Context cx, UserInfo[] us)
 	{
 		super(cx, R.layout.listtxt, us);
 	}
 
+	/**
+	 * 数据封装
+	 * position 表示下标
+	 */
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent)
 	{

@@ -1,5 +1,10 @@
 package com.mynote.jilu;
 
+/**
+ * 用户基本信息实体类
+ * @author sun
+ *
+ */
 public class UserInfo
 {
 	String shijian=null;

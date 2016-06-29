@@ -14,6 +14,11 @@ import java.util.ArrayList;
 import kankan.wheel.widget.WheelView;
 import kankan.wheel.widget.adapters.ArrayWheelAdapter;
 
+/**
+ * 编辑界面
+ * @author sun
+ *
+ */
 public class EditActivity extends Activity
 {
 	Button saves = null;
